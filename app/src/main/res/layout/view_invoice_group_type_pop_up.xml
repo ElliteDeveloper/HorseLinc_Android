@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="@dimen/size_4"
+        app:cardUseCompatPadding="true"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="98dp"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_16"
+                android:layout_marginTop="@dimen/size_16"
+                android:layout_marginBottom="@dimen/size_4"
+                android:textSize="15sp"
+                android:textColor="@color/colorGrayText"
+                android:text="@string/payment_group_by">
+
+        </TextView>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/size_16"
+                android:gravity="center">
+
+            <ImageView
+                    android:id="@+id/horseImageView"
+                    android:layout_width="@dimen/size_icon_normal"
+                    android:layout_height="@dimen/size_icon_normal"
+                    android:layout_marginEnd="@dimen/size_16"
+                    app:srcCompat="@drawable/ic_horse_placeholder"
+                    android:contentDescription="@string/image_description">
+            </ImageView>
+
+            <ImageView
+                    android:id="@+id/userImageView"
+                    android:layout_width="@dimen/size_icon_normal"
+                    android:layout_height="@dimen/size_icon_normal"
+                    app:srcCompat="@drawable/ic_profile_placeholder"
+                    android:contentDescription="@string/image_description">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

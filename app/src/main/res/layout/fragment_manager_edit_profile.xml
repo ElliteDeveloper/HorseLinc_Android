@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:elevation="4dp"
+            android:background="@color/colorPrimary">
+
+        <ImageButton
+                android:id="@+id/btBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/image_description"
+                app:srcCompat="@drawable/ic_arrow_back_white"
+                android:background="@android:color/transparent"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/edit_profile"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="92dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/ivAvatar"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_margin="16dp"
+                        android:src="@drawable/ic_camera_alt"
+                        app:riv_border_width="0dp"
+                        app:riv_oval="true"
+                        app:riv_mutate_background="true"
+                        android:background="#5DBDC2"
+                        android:scaleType="centerCrop"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/name"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"/>
+
+                <include layout="@layout/layout_seperator"/>
+
+                <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:hint="@string/name"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:background="@android:color/white"
+                        tools:ignore="Autofill" />
+
+                <include layout="@layout/layout_seperator"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/barn_name"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"/>
+
+                <include layout="@layout/layout_seperator"/>
+
+                <EditText
+                        android:id="@+id/etBarnName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:inputType="textPersonName"
+                        android:hint="@string/barn_name"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:background="@android:color/white"
+                        tools:ignore="Autofill" />
+
+                <include layout="@layout/layout_seperator"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/phone"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"/>
+
+                <include layout="@layout/layout_seperator"/>
+
+                <EditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:inputType="phone"
+                        android:hint="@string/phone_number"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:background="@android:color/white"
+                        tools:ignore="Autofill" />
+
+                <include layout="@layout/layout_seperator"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/location"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"/>
+
+                <include layout="@layout/layout_seperator"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@android:color/white">
+
+
+                    <RelativeLayout
+                            android:id="@+id/lytLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                android:id="@+id/tvLocation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:paddingTop="14dp"
+                                android:paddingBottom="14dp"
+                                android:lines="1"
+                                android:hint="@string/search_your_location"
+                                android:textSize="14sp"
+                                android:textColor="@android:color/black"
+                                android:background="@android:color/white"/>
+
+                        <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/image_description"
+                                app:srcCompat="@drawable/ic_search_black"/>
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/layout_seperator"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="16dp"/>
+
+                    <EditText
+                            android:id="@+id/etLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="14dp"
+                            android:paddingBottom="14dp"
+                            android:inputType="textPersonName"
+                            android:hint="@string/or_enter_address_here"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black"
+                            android:background="@android:color/white"
+                            tools:ignore="Autofill" />
+
+                </LinearLayout>
+
+                <include layout="@layout/layout_seperator"/>
+
+                <include layout="@layout/layout_seperator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="24dp"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@android:color/white">
+
+
+                    <TextView
+                            android:id="@+id/tvChangeEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="14dp"
+                            android:paddingBottom="14dp"
+                            android:text="@string/change_email"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black"
+                            android:background="@android:color/white"/>
+
+                    <include layout="@layout/layout_seperator"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="16dp"/>
+
+                    <TextView
+                            android:id="@+id/tvChangePassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="14dp"
+                            android:paddingBottom="14dp"
+                            android:text="@string/change_password"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black"
+                            android:background="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <Button
+                android:id="@+id/btSave"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="24dp"
+                android:layout_alignParentBottom="true"
+                android:text="@string/save"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="@android:color/white"
+                android:lineSpacingExtra="4sp"
+                android:textAllCaps="false"
+                android:background="@drawable/corner22_background_ec7185"
+                />
+
+    </RelativeLayout>
+
+</LinearLayout>

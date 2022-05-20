@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4F748C</color>
+    <color name="colorPrimaryDark">#4F748C</color>
+    <color name="colorAccent">#4F748C</color>
+
+    <color name="colorMain">#73cbd2</color>
+    <color name="colorMainBackground">#efefef</color>
+
+    <color name="colorPink">#ec7185</color>
+    <color name="colorTeal">#27C5C8</color>
+    <color name="colorDarkBlue">#5389a0</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorMystic">#DCE3EC</color>
+
+    <color name="colorServiceRequestCompleted">#961508</color>
+    <color name="colorServiceRequestDeclined">#ec7185</color>
+    <color name="colorServiceRequestAccepted">#41969c</color>
+    <color name="colorServiceRequestPending">#ec7185</color>
+    <color name="colorServiceRequestReassigned">#462947</color>
+
+    <color name="colorApproverPaymentCard">#E0E5E9</color>
+    <color name="colorPayerPaymentCard">#FFFFFF</color>
+
+    <color name="colorInvoicePaid">#4f748c</color>
+    <color name="colorInvoiceUnPaid">#000000</color>
+
+    <color name="colorPrimaryButtonTitle">#FFFFFF</color>
+    <color name="colorSecondaryButtonProgressBar">#335c77</color>
+
+    <color name="colorDateText">#5E000000</color>
+    <color name="colorPrimaryText">#000000</color>
+    <color name="colorGrayText">#B0000000</color>
+    <color name="colorTextHighlight">#5dbdc2</color>
+    
+</resources>

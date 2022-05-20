@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="size_icon_normal">40dp</dimen>
+    <dimen name="size_avatar_large">65dp</dimen>
+    <dimen name="size_avatar_small">32dp</dimen>
+
+    <dimen name="size_button_normal">50dp</dimen>
+
+    <dimen name="invoice_card_elevation">2dp</dimen>
+
+    <dimen name="size_2">2dp</dimen>
+    <dimen name="size_4">4dp</dimen>
+    <dimen name="size_6">6dp</dimen>
+    <dimen name="size_8">8dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_12">12dp</dimen>
+    <dimen name="size_14">14dp</dimen>
+    <dimen name="size_16">16dp</dimen>
+    <dimen name="size_24">24dp</dimen>
+    <dimen name="size_32">32dp</dimen>
+    <dimen name="size_48">48dp</dimen>
+
+
+    <dimen name="font_tab_title">14sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+</resources>

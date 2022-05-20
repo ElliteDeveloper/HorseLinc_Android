@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/avatarImageView"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:riv_border_width="0dp"
+                app:riv_oval="true"
+                app:riv_mutate_background="true"
+                android:src="@drawable/ic_horse_placeholder" />
+
+        <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/size_12"
+                android:layout_marginEnd="@dimen/size_8"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="17sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal">
+        </TextView>
+
+        <TextView
+                android:id="@+id/servicesSumTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="17sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal">
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/servicesCountTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_marginBottom="@dimen/size_4"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal">
+    </TextView>
+
+
+    <TextView
+            android:id="@+id/durationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_4"
+            android:layout_marginBottom="@dimen/size_16"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal">
+    </TextView>
+
+
+
+</LinearLayout>

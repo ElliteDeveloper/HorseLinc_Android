@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:elevation="4dp"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:focusable="true">
+
+        <ImageButton
+                android:id="@+id/btBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/image_description"
+                app:srcCompat="@drawable/ic_arrow_back_white"
+                android:background="@android:color/transparent"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/create_invoice"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="92dp">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/horse"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+
+                <include layout="@layout/layout_seperator" />
+
+                <TextView
+                        android:id="@+id/tvSearchHorse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:drawableEnd="@drawable/ic_search_gray"
+                        android:hint="@string/search_or_add_horse"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="14dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="14dp"
+                        android:textSize="14sp" />
+
+                <LinearLayout
+                        android:id="@+id/lytHorseInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                    <LinearLayout
+                            android:id="@+id/lytHorse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="14dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="14dp">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/ivHorseAvatar"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:scaleType="centerCrop"
+                                app:riv_oval="true"
+                                app:srcCompat="@drawable/ic_profile" />
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/tvHorseName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/horse_name"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+
+                            <TextView
+                                    android:id="@+id/tvHorseInfo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/horse_name"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="italic" />
+                        </LinearLayout>
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:contentDescription="@string/image_description"
+                                app:srcCompat="@drawable/ic_search_gray" />
+
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_seperator" />
+
+                    <LinearLayout
+                            android:id="@+id/lytTrainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginBottom="12dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/trainer"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:paddingBottom="14dp">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                    android:id="@+id/ivTrainerAvatar"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:scaleType="centerCrop"
+                                    app:riv_oval="true"
+                                    app:srcCompat="@drawable/ic_profile" />
+
+                            <TextView
+                                    android:id="@+id/tvTrainerName"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/lytOwners"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginBottom="12dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/owners"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                        <include layout="@layout/layout_seperator" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/lstOwners"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/lytLeased"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginBottom="12dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/leased_to"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                        <include layout="@layout/layout_seperator" />
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:paddingBottom="7dp">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                    android:id="@+id/ivLeasedAvatar"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:scaleType="centerCrop"
+                                    app:riv_oval="true"
+                                    app:srcCompat="@drawable/ic_profile" />
+
+                            <TextView
+                                    android:id="@+id/tvLeasedName"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <include layout="@layout/layout_seperator" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <include layout="@layout/layout_seperator" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="14dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="14dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/date"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                    <TextView
+                            android:id="@+id/tvDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_weight="1"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                    <ImageView
+                            android:id="@+id/ivDate"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="@string/image_description"
+                            app:srcCompat="@drawable/ic_calendar" />
+                </LinearLayout>
+
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/service"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+
+                <include layout="@layout/layout_seperator" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/lstServices"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    <TextView
+                            android:id="@+id/tvSelectService"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_arrow_down_black_opacity"
+                            android:paddingStart="16dp"
+                            android:paddingTop="14dp"
+                            android:paddingEnd="13dp"
+                            android:paddingBottom="14dp"
+                            android:text="@string/select_service"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                    <include
+                            layout="@layout/layout_seperator"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="16dp" />
+
+                    <TextView
+                            android:id="@+id/tvAddCustomService"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_add_circle_black"
+                            android:drawableTint="@color/colorPrimary"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="14dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="14dp"
+                            android:text="@string/add_custom_service"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            tools:targetApi="m" />
+
+                </LinearLayout>
+
+                <include layout="@layout/layout_seperator" />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/create_invoice_msg"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                <LinearLayout
+                        android:id="@+id/invoiceMethodContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                    <include layout="@layout/layout_seperator" />
+
+                    <TextView
+                            android:id="@+id/selectInvoiceMethodTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_arrow_down_black_opacity"
+                            android:paddingStart="16dp"
+                            android:paddingTop="14dp"
+                            android:paddingEnd="13dp"
+                            android:paddingBottom="14dp"
+                            android:hint="@string/set_invoice_method"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/invoiceMethodLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="50dp">
+
+                        <include
+                                android:id="@+id/include"
+                                layout="@layout/layout_seperator"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="16dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/contactUserImageView"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_marginStart="16dp"
+                                android:contentDescription="@string/image_description"
+                                android:src="@drawable/ic_profile_placeholder"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:riv_oval="true" />
+
+                        <TextView
+                                android:id="@+id/invoiceMethodTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="sans-serif"
+                                android:letterSpacing="0.01"
+                                android:lineSpacingExtra="8sp"
+                                android:paddingTop="14dp"
+                                android:paddingBottom="14dp"
+                                android:textColor="#de000000"
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/contactUserImageView"
+                                app:layout_constraintTop_toBottomOf="@+id/include" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <include layout="@layout/layout_seperator" />
+
+                </LinearLayout>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/show_optional"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+
+                <include layout="@layout/layout_seperator" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/tvSearchByName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_search_gray"
+                            android:hint="@string/search_by_name1"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="14dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="14dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                    <include
+                            layout="@layout/layout_seperator"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="16dp" />
+
+                    <EditText
+                            android:id="@+id/etShow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/or_enter_show_here"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="14dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="14dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            tools:ignore="Autofill" />
+
+                    <include
+                            layout="@layout/layout_seperator"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="16dp" />
+
+                    <EditText
+                            android:id="@+id/etCompetition"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/competition_class"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="14dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="14dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            tools:ignore="Autofill" />
+
+                </LinearLayout>
+
+                <include layout="@layout/layout_seperator" />
+
+                <include
+                        layout="@layout/layout_seperator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp" />
+
+                <EditText
+                        android:id="@+id/etNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@android:color/white"
+                        android:gravity="left"
+                        android:hint="@string/msg_add_note"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="14dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="14dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill,RtlHardcoded" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+                android:id="@+id/btNext"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="24dp"
+                android:layout_alignParentBottom="true"
+                android:text="@string/next"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="@android:color/white"
+                android:lineSpacingExtra="4sp"
+                android:textAllCaps="false"
+                android:background="@drawable/corner22_background_ec7185"
+                />
+
+    </RelativeLayout>
+
+</LinearLayout>

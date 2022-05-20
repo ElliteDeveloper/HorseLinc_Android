@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/tvSelectService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="13dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="@string/select_service"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:drawableRight="@drawable/ic_arrow"/>
+
+    <include layout="@layout/layout_seperator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"/>
+
+    <TextView
+            android:id="@+id/tvAddCustomService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="@string/add_custom_service"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:drawableTint="@color/colorPrimary"
+            android:drawableRight="@drawable/ic_add_circle_black"/>
+
+</LinearLayout>

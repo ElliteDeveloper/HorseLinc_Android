@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@color/colorPrimary">
+
+        <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+            <ImageButton
+                    android:id="@+id/btNotification"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/image_description"
+                    app:srcCompat="@drawable/ic_notification"
+                    android:background="@android:color/transparent"/>
+            <ImageView
+                    android:id="@+id/ivNotiBadge"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/image_description"
+                    android:src="@drawable/noti_badge"
+                    android:visibility="gone"/>
+        </RelativeLayout>
+
+        <ImageButton
+                android:id="@+id/btEdit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/image_description"
+                app:srcCompat="@drawable/ic_edit_white"
+                android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/colorPrimary">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/ic_profile"
+                app:riv_oval="true"/>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+            <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"/>
+            <TextView
+                    android:id="@+id/tvBarn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#91ffffff"/>
+            <TextView
+                    android:id="@+id/tvInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#91ffffff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="vertical"
+                    android:background="@android:color/white">
+
+                <include layout="@layout/layout_seperator" />
+
+                <RelativeLayout
+                        android:id="@+id/lytProviders"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                    <TextView
+                            android:id="@+id/tvProviders"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/my_service_providers"
+                            android:textSize="14sp"
+                            android:textColor="#de000000"/>
+
+                    <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/ic_arrow_right_gray"
+                            android:contentDescription="@string/image_description" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_seperator"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white">
+
+                <include layout="@layout/layout_seperator"/>
+
+                <RelativeLayout
+                        android:id="@+id/lytEditPayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                    <TextView
+                            android:id="@+id/tvEditPayment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/edit_payment_information"
+                            android:textSize="14sp"
+                            android:textColor="#de000000"/>
+
+                    <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/image_description"
+                            app:srcCompat="@drawable/ic_arrow_right_gray"/>
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_seperator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"/>
+
+                <RelativeLayout
+                        android:id="@+id/lytContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/contact_horselinc"
+                            android:textSize="14sp"
+                            android:textColor="#de000000"/>
+
+                    <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/image_description"
+                            app:srcCompat="@drawable/ic_arrow_right_gray"/>
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_seperator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"/>
+
+                <RelativeLayout
+                        android:id="@+id/lytTerms"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/terms_and_conditions"
+                            android:textSize="14sp"
+                            android:textColor="#de000000"/>
+
+                    <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/image_description"
+                            app:srcCompat="@drawable/ic_arrow_right_gray"/>
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_seperator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"/>
+
+                <RelativeLayout
+                        android:id="@+id/lytPrivacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/privacy_policy"
+                            android:textSize="14sp"
+                            android:textColor="#de000000"/>
+
+                    <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/image_description"
+                            app:srcCompat="@drawable/ic_arrow_right_gray"/>
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_seperator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"/>
+
+                <RelativeLayout
+                        android:id="@+id/lytShare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/share_horselinc"
+                            android:textSize="14sp"
+                            android:textColor="#de000000"/>
+
+                    <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/image_description"
+                            app:srcCompat="@drawable/ic_arrow_right_gray"/>
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_seperator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"/>
+
+                <RelativeLayout
+                        android:id="@+id/lytSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/switch_to_provider_profile"
+                            android:textSize="14sp"
+                            android:textColor="#de000000"/>
+
+                    <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/ic_arrow_right_gray"
+                            android:contentDescription="@string/image_description" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_seperator" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="32dp"
+                    android:orientation="vertical"
+                    android:background="@android:color/white">
+
+                <include layout="@layout/layout_seperator"/>
+
+                <RelativeLayout
+                        android:id="@+id/lytLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/log_out"
+                            android:textSize="14sp"
+                            android:textColor="#de000000"/>
+
+                    <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/image_description"
+                            app:srcCompat="@drawable/ic_arrow_right_gray"/>
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_seperator" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

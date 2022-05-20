@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+    <LinearLayout
+            android:id="@+id/lytHorse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:background="@android:color/white">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivHorseAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_profile"
+                app:riv_border_width="1dp"
+                app:riv_border_color="@color/colorTeal"
+                app:riv_oval="true"/>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/tvHorseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="horse name"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"/>
+            <TextView
+                    android:id="@+id/tvHorseInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:hint="horse name"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_search_gray"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_seperator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"/>
+
+</LinearLayout>

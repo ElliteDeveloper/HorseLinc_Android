@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:src="@mipmap/pic_logo" android:id="@+id/logoImageView"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="24dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="40dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="40dp" android:contentDescription="@string/image_description"/>
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp" app:srcCompat="@drawable/ic_provider_white"
+                android:id="@+id/providerImageView"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
+                android:contentDescription="@string/image_description" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/logoImageView"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/service_providers"
+                android:id="@+id/titleTextView"
+                app:layout_constraintStart_toEndOf="@+id/providerImageView"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toTopOf="@+id/providerImageView"
+                app:layout_constraintBottom_toBottomOf="@+id/providerImageView"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="9sp"
+                android:text="@string/intro_service_providers_description"
+                android:id="@+id/descTextView"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/providerImageView"
+                app:layout_constraintStart_toStartOf="@+id/providerImageView" android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="50dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

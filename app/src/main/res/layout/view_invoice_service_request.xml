@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/horseInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/horseAvatarImageView"
+                android:layout_width="@dimen/size_avatar_small"
+                android:layout_height="@dimen/size_avatar_small"
+                app:riv_oval="true"
+                app:srcCompat="@drawable/ic_horse_placeholder">
+
+        </com.makeramen.roundedimageview.RoundedImageView>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_16"
+                android:layout_marginTop="@dimen/size_16"
+                android:layout_marginBottom="@dimen/size_16"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/horseBarnNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"/>
+
+            <TextView
+                    android:id="@+id/horseShowNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorGrayText"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_4"
+            android:textSize="13sp"
+            android:textColor="@color/colorDateText"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"/>
+
+    <TextView
+            android:id="@+id/showNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_4"
+            android:textSize="13sp"
+            android:textColor="@color/colorDateText"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"/>
+
+    <LinearLayout
+            android:id="@+id/servicesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_12"
+            android:layout_marginBottom="@dimen/size_12"
+            android:orientation="vertical">
+
+    </LinearLayout>
+
+
+    <TextView
+            android:id="@+id/instructionLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_4"
+            android:textSize="13sp"
+            android:textColor="@color/colorDateText"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"/>
+
+</LinearLayout>

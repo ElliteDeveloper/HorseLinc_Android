@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/horses" android:icon="@drawable/ic_nav_bottom_horse"
+          android:id="@+id/menuHorses"/>
+    <item android:title="@string/payment" android:icon="@drawable/ic_nav_bottom_payment"
+          android:id="@+id/menuPayment"/>
+    <item android:title="@string/profile" android:icon="@drawable/ic_nav_bottom_profile"
+          android:id="@+id/menuProfile"/>
+</menu>

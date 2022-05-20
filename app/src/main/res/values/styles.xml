@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DarkActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LightActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorMain</item>
+        <item name="colorPrimaryDark">@color/colorMain</item>
+        <item name="colorAccent">@color/colorMain</item>
+    </style>
+
+    <style name="AuthPaymentCardRadio" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/auth_payment_card_radio</item>
+    </style>
+    <style name="EditPaymentCardRadio" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/edit_payment_card_radio</item>
+    </style>
+
+    <style name="PaymentApproverSwitch" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorTeal</item>
+        <item name="colorPrimaryDark">@color/colorTeal</item>
+        <item name="colorAccent">@color/colorTeal</item>
+    </style>
+
+    <style name="WebViewProgressBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorTeal</item>
+        <item name="colorPrimaryDark">@color/colorTeal</item>
+        <item name="colorAccent">@color/colorTeal</item>
+    </style>
+
+    <style name="HLTabLayoutTextAppearance" parent="android:TextAppearance.Widget.TabWidget">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="HLInvoicePaidAmountTextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@mipmap/pic_logo" android:id="@+id/logoImageView"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="80dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="52dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="52dp" android:contentDescription="@string/image_description"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/linc_ing_horses_to_the_services_they_need_by_automating"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="24dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp" android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/logoImageView" android:id="@+id/descTextView"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/horseManagerLayout"
+                app:layout_constraintTop_toBottomOf="@+id/descTextView"
+                android:layout_marginTop="40dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="24dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp">
+
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/ic_manager"
+                    android:id="@+id/mangerImageView" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/image_description"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="4sp"
+                    android:text="@string/service_requests_from_the_horse_managers"
+                    app:layout_constraintStart_toEndOf="@+id/mangerImageView" android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/managerTextView"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/serviceProviderLayout"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/horseManagerLayout"
+                app:layout_constraintEnd_toEndOf="@+id/horseManagerLayout"
+                app:layout_constraintStart_toStartOf="@+id/horseManagerLayout">
+
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/ic_provider"
+                    android:id="@+id/providerImageView" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/image_description"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="4sp"
+                    android:text="@string/service_provider_scheduling"
+                    app:layout_constraintStart_toEndOf="@+id/providerImageView" android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/providerTextView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/serviceProviderLayout"
+                android:layout_marginTop="24dp" android:id="@+id/invoicingLayout"
+                app:layout_constraintEnd_toEndOf="@+id/serviceProviderLayout"
+                app:layout_constraintStart_toStartOf="@+id/serviceProviderLayout">
+
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/ic_invoicing"
+                    android:id="@+id/invoicingImageView" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/image_description"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="4sp"
+                    android:text="@string/invoicing"
+                    app:layout_constraintStart_toEndOf="@+id/invoicingImageView" android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/invoicingTextView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/paymentsLayout"
+                app:layout_constraintTop_toBottomOf="@+id/invoicingLayout"
+                app:layout_constraintEnd_toEndOf="@+id/invoicingLayout"
+                app:layout_constraintStart_toStartOf="@+id/invoicingLayout" android:layout_marginTop="24dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="26dp">
+
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/ic_payments"
+                    android:id="@+id/paymentsImageView" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/image_description"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="4sp"
+                    android:text="@string/payments"
+                    app:layout_constraintStart_toEndOf="@+id/paymentsImageView" android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/paymentsTextView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

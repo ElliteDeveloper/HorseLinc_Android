@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:gravity="end"
+              android:layout_width="match_parent"
+              android:layout_height="56dp">
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:textCursorDrawable="@drawable/edit_text_cursor_black"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:paddingEnd="12dp"
+            android:hint="@string/usef_registration"
+            android:textColorHint="#99000000"
+            android:ems="10"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="8sp"
+            android:id="@+id/nameEditText"
+            tools:ignore="Autofill"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/numberEditText"/>
+    <EditText
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:textCursorDrawable="@drawable/edit_text_cursor_black"
+            android:inputType="numberDecimal"
+            android:digits="0123456789"
+            android:hint="@string/sharp_symbol"
+            android:gravity="end|center_vertical"
+            android:textColorHint="#99000000"
+            android:ems="10"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="8sp"
+            android:id="@+id/numberEditText"
+            tools:ignore="Autofill"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginEnd="16dp" app:layout_constraintEnd_toStartOf="@+id/deleteImageView"/>
+
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_add_circle_black"
+            android:rotation="45"
+            android:id="@+id/deleteImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:scaleType="center"
+            android:alpha="0.5" android:contentDescription="@string/image_description"/>
+
+</LinearLayout>

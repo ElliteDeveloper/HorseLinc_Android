@@ -1,0 +1,236 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context="com.horselinc.views.fragments.role.HLSelectRoleFragment"
+>
+    <ImageView
+            android:src="@drawable/img_login_bg"
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/backgroundImageView" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:scaleType="centerCrop"
+            android:contentDescription="@string/image_description"/>
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+            <ImageView
+                    android:src="@mipmap/pic_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/logoImageView"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="80dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                    android:contentDescription="@string/image_description"/>
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/horseManagerCardView"
+                    android:layout_width="364dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="24dp"
+                    app:cardBackgroundColor="#5389A0"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintBottom_toTopOf="@+id/serviceProviderCardView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/logoImageView"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintVertical_chainStyle="packed">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:id="@+id/horseManagerImageView"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:contentDescription="@string/image_description"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_manager_white" />
+
+                    <TextView
+                            android:id="@+id/horseManagerTitleTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:lineSpacingExtra="8sp"
+                            android:text="@string/horse_manager"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/horseManagerImageView"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                            android:id="@+id/horseManagerDescTextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="sans-serif"
+                            android:lineSpacingExtra="4sp"
+                            android:text="@string/horse_trainers"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"
+                            android:textStyle="normal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/horseManagerTitleTextView"
+                            app:layout_constraintTop_toBottomOf="@+id/horseManagerTitleTextView" />
+
+                    <TextView
+                            android:id="@+id/horseManagerDescTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="sans-serif"
+                            android:lineSpacingExtra="4sp"
+                            android:text="@string/horse_owners"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"
+                            android:textStyle="normal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/horseManagerDescTextView1"
+                            app:layout_constraintTop_toBottomOf="@+id/horseManagerDescTextView1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/serviceProviderCardView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardBackgroundColor="#5389A0"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="@+id/horseManagerCardView"
+                    app:layout_constraintStart_toStartOf="@+id/horseManagerCardView"
+                    app:layout_constraintTop_toBottomOf="@+id/horseManagerCardView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:id="@+id/serviceProviderImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:contentDescription="@string/image_description"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_provider_white" />
+
+                    <TextView
+                            android:id="@+id/serviceProviderTitleTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:lineSpacingExtra="8sp"
+                            android:text="@string/service_provider"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/serviceProviderImageView"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                            android:id="@+id/serviceProviderDescTextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="sans-serif"
+                            android:lineSpacingExtra="4sp"
+                            android:text="@string/horse_braiders"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"
+                            android:textStyle="normal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/serviceProviderTitleTextView"
+                            app:layout_constraintTop_toBottomOf="@+id/serviceProviderTitleTextView" />
+
+                    <TextView
+                            android:id="@+id/serviceProviderDescTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="sans-serif"
+                            android:lineSpacingExtra="4sp"
+                            android:text="@string/other_services"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"
+                            android:textStyle="normal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/serviceProviderDescTextView1"
+                            app:layout_constraintTop_toBottomOf="@+id/serviceProviderDescTextView1" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                    android:id="@+id/bottomTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/don_t_worry_you_can_update_your_profile_to_be_able_to_access_both_types_once_you_have_an_account"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/serviceProviderCardView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

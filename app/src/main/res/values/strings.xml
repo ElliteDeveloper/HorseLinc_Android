@@ -1,0 +1,355 @@
+<resources>
+    <string name="app_name">HorseLinc</string>
+    <string name="image_description">Image Description</string>
+    <string name="skip">SKIP</string>
+    <string name="continue_">CONTINUE</string>
+    <string name="linc_ing_horses_to_the_services_they_need_by_automating">
+        \"Linc\"ing horses to the services they need
+        by automating
+    </string>
+    <string name="service_requests_from_the_horse_managers">Service requests\nfrom the Horse Managers</string>
+    <string name="service_provider_scheduling">Service Provider Scheduling</string>
+    <string name="invoicing">Invoicing</string>
+    <string name="payments">Payments</string>
+    <string name="horse_managers">Horse Managers</string>
+    <string name="intro_horse_managers_description">Set up horse profiles to easily manage services payments associated
+        each horse.\n\nRequest services for the horses that will be sent directly to the service providers’ schedules.
+        \n\nConfirm automated invoices once services are completed to process payments from the assigned horse owner’s
+        profile.
+    </string>
+    <string name="service_providers">Service Providers</string>
+    <string name="intro_service_providers_description">Set up your services and rates in your personalized profile.
+        Manage scheduled service requests from your schedule screen.\n\nMark services complete to automatically create an
+        invoice back to the horse managers. Receive confirmation of automated payment once horse managers confirm the
+        services are completed.
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="don_t_have_an_account">Don’t have an account?</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="log_in">log in</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="reset_your_password">Reset Your Password</string>
+    <string name="forgot_password_description">Enter your Email below and we’ll send you\ninstructions on how to reset
+        your password
+    </string>
+    <string name="log_in_instead">LOG IN INSTEAD</string>
+    <string name="email_instructions">Email Instructions</string>
+    <string name="sign_up">Sign up</string>
+    <string name="horse_trainers">Horse Trainers</string>
+    <string name="horse_owners">Horse Owners</string>
+    <string name="horse_manager">Horse Manager</string>
+    <string name="service_provider">Service Provider</string>
+    <string name="horse_braiders">Horse Braiders</string>
+    <string name="other_services">Other Services</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="phone_number">Phone number</string>
+    <string name="search_your_location">Search your location</string>
+    <string name="or_enter_your_address_here">Or enter your address here</string>
+    <string name="add_payment_information">Add payment information</string>
+    <string name="create_account_terms">
+        By creating an account, you agree to the Terms &amp;\nConditions and Privacy Policy of HorseLinc
+    </string>
+    <string name="create_account">Create Account</string>
+    <string name="bullet_symbols">\u2022\u2022\u2022\u2022</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="payment_approvals">Payment approvals</string>
+    <string name="these_horse_managers_can_approve_payments">
+        These Horse Managers can approve payments to Service Providers on your behalf (up to a specified dollar value).
+    </string>
+    <string name="add_payment_approver">Add Payment Approver</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="barn">Barn</string>
+    <string name="done">Done</string>
+    <string name="payment_approver_name">Payment Approver Name</string>
+    <string name="dollar_value">Dollar Value</string>
+    <string name="unlimited">Unlimited</string>
+    <string name="up_to">Up to</string>
+
+    <!-- HLMessages -->
+    <string name="msg_sucess">Success</string>
+    <string name="msg_alert_update_default_payment">Are you sure you want to change default payment?</string>
+    <string name="msg_alert_delete_payment">Are you sure you want to delete this payment?</string>
+    <string name="msg_alert_clear_payment_approver">Are you sure you want to delete approver?</string>
+    <string name="msg_alert_delete_service_rate">Are you sure you want to delete service rate?</string>
+    <string name="msg_alert_delete_horse_owner">Are you sure you want to delete this owner?</string>
+    <string name="msg_alert_delete_horse">Are you sure you want to delete horse?</string>
+    <string name="msg_alert_logout">Are you sure you want to log out?</string>
+    <string name="msg_alert_delete_request">Are you sure you want to delete this request?</string>
+    <string name="msg_alert_delete_service">Are you sure you want to delete this service?</string>
+    <string name="msg_alert_delete_base_user">Are you sure you want to remove this user?</string>
+    <string name="msg_alert_delete_notification">Are you sure you want to delete this notification?</string>
+    <string name="msg_alert_complete_request">Are you sure to mark this job as complete?\nThis action cannot be undone. Once a job is marked complete, it will be moved into the payments tab.</string>
+    <string name="msg_err_required">Required</string>
+    <string name="msg_err_invalid">Invalid</string>
+    <string name="msg_err_please_select_approver">Please select approver</string>
+    <string name="msg_err_please_enter_amount">Please enter amount</string>
+    <string name="msg_confirm_password_not_match">Confirm password does not match</string>
+    <string name="msg_confirm_add_service_provider">Are you sure you want to add user who invited you as your service provider?</string>
+    <string name="msg_err_network">Network error, please try again when you have a connection</string>
+    <string name="msg_info_network">You have a connection now</string>
+
+
+    <string name="add_new_rate">Add New Rate</string>
+    <string name="add_new_service">Add New Service</string>
+    <string name="service_rate">Service Rate</string>
+    <string name="service_name">Service Name</string>
+    <string name="save">Save</string>
+    <string name="add_new_bank_account">Add New Bank Account</string>
+    <string name="horses">Horses</string>
+    <string name="schedule">Schedule</string>
+    <string name="payment">Payment</string>
+    <string name="profile">Profile</string>
+    <string name="no_horses_available_at_this_time">No horses available at this time</string>
+    <string name="no_horse_users_available_at_this_time">No users available at this time</string>
+    <string name="new_horse_profile">New Horse Profile</string>
+    <string name="create_horse_profile">Create Horse Profile</string>
+    <string name="edit_horse_profile">Edit Horse Profile</string>
+    <string name="horse_barn_name_required">Horse Barn Name (required)</string>
+    <string name="horse_show_name_required">Horse Show Name (required)</string>
+    <string name="horse_show_name">Horse Show Name</string>
+    <string name="horse_gender_required">Gender (required)</string>
+    <string name="horse_gender">Gender</string>
+    <string name="birth_year">Birth Year</string>
+    <string name="horse_profile_description">Add any necessary notes on\npersonality or temperament here.</string>
+    <string name="horse_profile_description_1">Use the fields below to attach an Owner, Trainer, and/or Leaser to this
+        horse profile/ If no owner is attached, the trainer will be responsible for payment.
+    </string>
+    <string name="horse_trainer_required">HORSE TRAINER (required)</string>
+    <string name="trainer_name">Trainer Name</string>
+    <string name="horse_owner_s_optional">HORSE OWNER(S) (optional)</string>
+    <string name="horse_profile_owner_error">Percentages of ownership must total 100%.\nPlease review and try again.
+    </string>
+    <string name="horse_leased_to_description">Use the \"Leased to\" field to attach a Horse Manager to\nthis horse
+        profile in order forward payment
+        \nresponsibilities until the Leaser is removed.
+    </string>
+    <string name="search_by_name">Search by name</string>
+    <string name="leased_to">LEASED TO</string>
+    <string name="registration_info_optional">REGISTRATION INFO (optional)</string>
+    <string name="sire">Sire</string>
+    <string name="dam">Dam</string>
+    <string name="color">Color</string>
+    <string name="height">Height</string>
+    <string name="add_another_horse_owner">ADD ANOTHER HORSE OWNER</string>
+    <string name="create_new_horse_owner">Create New Horse Owner</string>
+    <string name="add_another_registration">ADD ANOTHER REGISTRATION</string>
+    <string name="delete_horse_profile">Delete horse profile</string>
+    <string name="ok">OK</string>
+    <string name="select_birth_year">Select Birth Year</string>
+    <string name="can_t_find_someone">Can’t find someone?</string>
+    <string name="invite_to_horselinc">Invite to HorseLinc</string>
+    <string name="search">Search</string>
+    <string name="percent_symbol">%</string>
+    <string name="_0_00">0.00</string>
+    <string name="sharp_symbol">#</string>
+    <string name="filter">Filter</string>
+    <string name="sort_by">Sort by</string>
+    <string name="select">Select</string>
+    <string name="show_only">Show only</string>
+    <string name="owner">Owner</string>
+    <string name="trainer">Trainer</string>
+    <string name="apply">Apply</string>
+    <string name="clear">Clear</string>
+    <string name="services_scheduled">Services Scheduled</string>
+    <string name="request_a_service">Request a Service</string>
+    <string name="select_owner">Select Owner</string>
+    <string name="select_trainer">Select Trainer</string>
+
+    <!-- HM Profile Home -->
+    <string name="my_service_providers">My Service Providers</string>
+    <string name="edit_payment_information">Edit Payment Information</string>
+    <string name="contact_horselinc">Contact HorseLinc</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="log_out">Log Out</string>
+    <string name="switch_to_provider_profile">Switch To Provider Profile</string>
+    <string name="add_service_provider">Add Service Provider</string>
+    <string name="no_requests_available_at_this_time">No requests available at this time</string>
+    <string name="choose_service_provider">Choose Service Provider</string>
+
+    <!-- HM Edit Profile -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="service">Service</string>
+    <string name="barn_name">Barn Name</string>
+    <string name="phone">Phone</string>
+    <string name="location">Location</string>
+    <string name="or_enter_address_here">Or enter address here</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="service_rates">Service Rates</string>
+
+    <!-- update email -->
+    <string name="save_changes">Save Changes</string>
+    <string name="email">Email</string>
+
+    <!-- update password -->
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="rates">Rates</string>
+
+    <!-- provider profile -->
+    <string name="my_rates">My Rates</string>
+    <string name="view_stripe_merchat_account">View Stripe Merchant Account</string>
+    <string name="switch_to_manager_profile">Switch To Manager Profile</string>
+    <string name="enable_invoicing">Enable Invoicing</string>
+
+    <!-- create invoice -->
+    <string name="create_invoice">Create Invoice</string>
+    <string name="horse">Horse</string>
+    <string name="search_linced_horses">Search \"Linc\"ed Horses</string>
+    <string name="search_a_horse">Search a horse</string>
+    <string name="owners">Owner(s)</string>
+    <string name="add_custom_service">Add Custom Service</string>
+    <string name="create_invoice_msg">Horse managers will see these prices increased by 5% to cover the processing fees</string>
+    <string name="show_optional">SHOW (optional)</string>
+    <string name="search_by_name1">Search by Name</string>
+    <string name="or_enter_show_here">Or enter show here</string>
+    <string name="competition_class">Competition Class</string>
+    <string name="msg_add_note">Add a note to the Horse Managers</string>
+    <string name="input_service">Input service</string>
+    <string name="service_price_dollar">Service Price $</string>
+    <string name="qty">Qty</string>
+
+    <!-- search horse -->
+    <string name="search_by_horse_barn_name">Search by horse barn name</string>
+    <string name="search_horse">Search horse</string>
+    <string name="close">Close</string>
+
+    <!-- search service show -->
+    <string name="search_service_show">Search Service Show</string>
+
+    <!-- confirm invoice -->
+    <string name="show">Show</string>
+    <string name="total">Total</string>
+    <string name="note_to_horse_managers">A Note To The Horse Managers</string>
+    <string name="confirm_and_submit_invoice">Confirm &amp; Submit Invoice</string>
+    <string name="save_to_drafts">Save to Drafts</string>
+
+    <!-- Payments home tab-->
+    <string name="payment_provider_drafts">Drafts</string>
+    <string name="payment_provider_submitted">Submitted</string>
+    <string name="payment_provider_paid">Paid</string>
+    <string name="payment_manager_outstanding">Outstanding</string>
+    <string name="payment_manager_completed">Completed</string>
+    <string name="payment_group_by">Group By</string>
+    <string name="payment_approver_note">You were authorized to approve owner payments.</string>
+    <string name="payment_edit_invoice">Edit Invoice</string>
+    <string name="payment_mark_as_paid">Mark As Paid</string>
+    <string name="payment_send_payment_reminder">Send Payment Reminder</string>
+    <string name="payment_reminder_note">The payment reminder will be sent to the owner(s) of the horse or the lessee.</string>
+    <string name="payment_change">Change</string>
+    <string name="payment_submit_payment">Submit Payment</string>
+    <string name="payment_full_approver_note">You are approving a portion of this payment on behalf of paying user.</string>
+    <string name="payment_partial_approver_note">This invoice is $10 more than the maximum amount you are authorized to pay on behalf of username</string>
+    <string name="payment_request_approval">Request Approval</string>
+    <string name="payment_observer_info">You do not have the correct authorization to approve this payment on behalf of Chris Hemstreet</string>
+    <string name="payment_save">Save</string>
+    <string name="payment_delete_invoice">Delete Invoice</string>
+
+    <string name="schedule_service">Schedule Service</string>
+    <string name="date">Date</string>
+    <string name="search_for_show_by_title">Search for Show by Title</string>
+    <string name="or_enter_name">Or enter name</string>
+    <string name="enter_competition_class">Enter Competition Class</string>
+    <string name="horse_show">Horse Show</string>
+    <string name="select_service">Select Service</string>
+    <string name="please_describe_any_specific_requests_or_special_needs_for_the_horse">Please describe any specific requests or special needs for the horse</string>
+    <string name="next">Next</string>
+    <string name="sun">SUN</string>
+    <string name="sat">SAT</string>
+    <string name="fri">FRI</string>
+    <string name="thu">THU</string>
+    <string name="wed">WED</string>
+    <string name="tue">TUE</string>
+    <string name="mon">MON</string>
+    <string name="select_date">Select Date</string>
+    <string name="search_for_provider">Search for Provider</string>
+    <string name="confirm">Confirm</string>
+    <string name="class_">Class</string>
+    <string name="reassigned_to">Reassigned to</string>
+    <string name="services">Services</string>
+    <string name="instruction">Instruction</string>
+    <string name="export_payment_history">Export Payment History</string>
+    <string name="export_invoices">Export Invoices</string>
+    <string name="invoice_date_s">Invoice Date(s)</string>
+    <string name="from_comma">From:</string>
+    <string name="mm_dd_yyyy">MM/DD/YYYY</string>
+    <string name="to_comma">To:</string>
+    <string name="tap_to_search">Tap To Search</string>
+    <string name="manager_service_provider_desc">Add a Service Provider to your profile in order to give them the ability to invoice you directly for services they provide.
+        Invoices will require your approval prior to payment. \n\nWhen a Service Provider is added, services don\'t have to be scheduled ahead of time in order for the Service Provider to request payment.</string>
+    <string name="label">Label</string>
+    <string name="custom_label">Custom Label</string>
+    <string name="notifications">Notifications</string>
+    <string name="delete">Delete</string>
+    <string name="horse_by_manager">Horse (by Manager)</string>
+    <string name="select_manager">Select Manager</string>
+    <string name="horse_details">Horse Details</string>
+    <string name="horse_manager_notes">Horse Manager Notes</string>
+    <string name="additional_information">Additional Information</string>
+    <string name="my_private_notes">My Private Notes</string>
+    <string name="private_note">Private Note</string>
+    <string name="add_your_notes_this_horse_s_temperament_needs_quirks_etc_no_one_else_can_view_your_private_notes">(Add your notes от this horse’s temperament, needs, quirks,etc. No one else can view your private notes.)</string>
+    <string name="payment_options">Payment Options</string>
+    <string name="my_credit_card">My Credit Card</string>
+    <string name="payment_approvers">Payment Approvers</string>
+    <string name="payment_approvers_desc">These Horse Managers can approve payments to Service Providers on your behalf (up to a specified dollar value).</string>
+    <string name="current">Current</string>
+    <string name="past">Past</string>
+    <string name="pull_down_to_refresh">Pull down to Refresh</string>
+    <string name="mark_job_complete">Mark Job Complete</string>
+    <string name="assigned_to_">Assigned to:</string>
+    <string name="assign_job">Assign Job</string>
+    <string name="accept_job">Accept Job</string>
+    <string name="complete">Complete</string>
+    <string name="status">Status</string>
+    <string name="status_">Status:</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="job_canceled">Job Canceled</string>
+
+    <string name="request_option_decline_job">Decline Job</string>
+    <string name="request_option_assign_to_someone_else">Assign Job to Someone Else</string>
+    <string name="request_option_add_services">View Notes / Add Services</string>
+    <string name="edit_service">Edit Service</string>
+    <string name="add_another">Add Another</string>
+    <string name="horse_managers_will_see_these_prices_increased_by_5_to_cover_the_processing_fees">Horse managers will see these prices increased by 5% to cover the processing fees.</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="don_t_worry_you_can_update_your_profile_to_be_able_to_access_both_types_once_you_have_an_account">Don\'t worry, you can update your profile to be able to access both types once you have an account</string>
+    <string name="usef_registration">USEF Registration</string>
+    <string name="add_payment_desc">HorseLinc Partners with Stripe to make sure you get paid on time and to keep your personal bank and details secure. Click Continue to set up your payments on Stripe, and start sending invoices today.</string>
+    <string name="service_type">Service Type</string>
+    <string name="completed">Completed</string>
+
+    <string name="branch_key">key_live_ngNA3mKOg7PKlqSMVkkOIikftvk3RmLy</string>
+    <string name="branch_test_key">key_test_bdLs7mHSd2SOauOLSrTKwolkvtk4GpVL</string>
+    <string name="share_horselinc">Share HorseLinc</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="create">Create</string>
+    <string name="horse_name">horse name</string>
+    <string name="create_new_horse_profile">CREATE NEW HORSE PROFILE</string>
+    <string name="trainers_from_your_contacts">Trainers from your contacts</string>
+    <string name="your_balance">Your balance</string>
+    <string name="daily_2_day_rolling_basis">Daily – 2 day rolling basis</string>
+    <string name="to_enable_instant_payout_change_your_payout_account_to_a_debit_card_instead_of_a_bank_account">To enable instant payout change your payout account to a debit card instead of a bank account.</string>
+    <string name="instant_payout">Instant Payout</string>
+    <string name="instant_payouts_description">Instant Payouts are usually available within 30 minutes and posted in your account. The instant payouts are subject to a 1% fee that is deducted from your payout amount.</string>
+    <string name="instant_payouts_amount">Instant Payouts Amount</string>
+    <string name="_9_999_maximum">$ 9,999 Maximum</string>
+    <string name="submit">Submit</string>
+    <string name="dollar_0_00">$0.00</string>
+    <string name="set_invoice_method">Set invoice method</string>
+    <string name="search_or_add_horse">Search or Add Horse</string>
+    <string name="search_for_contact_name_email">Search for contact name, email</string>
+    <string name="search_for_contact_name_phone">Search for contact name, phone</string>
+    <string name="add_new_horse">ADD NEW HORSE</string>
+
+</resources>

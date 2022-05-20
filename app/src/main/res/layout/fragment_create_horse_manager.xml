@@ -1,0 +1,67 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/colorPrimary"
+                                                   tools:context="com.horselinc.views.fragments.role.HLCreateProfileFragment"
+>
+    <ImageView
+            app:srcCompat="@drawable/ic_arrow_back_white"
+            android:tint="@android:color/white"
+            android:layout_width="40dp"
+            android:layout_height="40dp" android:id="@+id/backImageView"
+            android:scaleType="center"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:contentDescription="@string/image_description"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/backImageView"
+    >
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="wrap_content"
+        >
+            <include layout="@layout/view_create_profile_common_header" app:layout_constraintTop_toTopOf="parent"
+                     app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                     android:id="@+id/commonHeader"
+                     android:layout_height="wrap_content" android:layout_width="0dp"
+                     android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:inputType="text"
+                    android:background="@drawable/corner4_background_456579"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="12dp"
+                    android:ems="10"
+                    android:textCursorDrawable="@drawable/edit_text_cursor_white"
+                    android:hint="@string/barn"
+                    android:textColorHint="#4dffffff"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="@android:color/white"
+                    android:lineSpacingExtra="8sp"
+                    android:id="@+id/barnNameEditText"
+                    tools:ignore="Autofill"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintTop_toBottomOf="@+id/commonHeader"
+                    app:layout_constraintStart_toStartOf="@+id/commonHeader"
+                    app:layout_constraintEnd_toEndOf="@+id/commonHeader"/>
+
+            <include layout="@layout/view_create_profile_common_footer"
+                     android:id="@+id/commonFooter"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/barnNameEditText"
+                     app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                     android:layout_width="0dp" app:layout_constraintBottom_toBottomOf="parent"
+                     android:layout_marginBottom="32dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

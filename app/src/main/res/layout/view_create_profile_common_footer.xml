@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content">
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#99ffffff"
+            android:lineSpacingExtra="6sp"
+            android:gravity="center_horizontal"
+            android:text="@string/create_account_terms"
+            android:id="@+id/termsTextView"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+            android:text="@string/create_account"
+            android:layout_width="0dp"
+            android:layout_height="45dp" android:id="@+id/createButton"
+            android:background="@color/colorPink"
+            android:alpha="0.2"
+            android:enabled="false"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#ffffff"
+            android:lineSpacingExtra="4sp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/termsTextView"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="40dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="40dp"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

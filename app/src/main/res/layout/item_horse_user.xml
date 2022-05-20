@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="178dp"
+                                                   android:layout_height="80dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#5389a0"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginTop="8dp" android:id="@+id/userTypeTextView"/>
+    <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/ic_profile"
+            android:id="@+id/userProfileImageView"
+            android:layout_marginTop="8dp"
+            app:riv_border_width="0dp"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:layout_constraintTop_toBottomOf="@+id/userTypeTextView"
+            app:layout_constraintStart_toStartOf="@+id/userTypeTextView"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            app:layout_constraintStart_toEndOf="@+id/userProfileImageView"
+            android:layout_marginStart="12dp"
+            android:id="@+id/usernameTextView" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@+id/userProfileImageView"
+    />
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#8a000000"
+            app:layout_constraintTop_toBottomOf="@+id/usernameTextView"
+            app:layout_constraintStart_toStartOf="@+id/usernameTextView" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/userInfoTextView"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,233 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMainBackground"
+        tools:context="com.horselinc.views.fragments.provider.HLProviderCreateHorseProfileFragment" >
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/backImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="0dp"
+                    android:contentDescription="@string/image_description"
+                    android:scaleType="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_arrow_back_white" />
+
+            <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:lineSpacingExtra="8sp"
+                    android:text="@string/create_horse_profile"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/backImageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolBar"
+            app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/horseProfileImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#5DBDC2"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_camera_alt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_border_width="0dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true" />
+
+            <EditText
+                    android:id="@+id/horseBarnNameEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/corner4_background_white"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/horse_barn_name_required"
+                    android:inputType="textPersonName"
+                    android:lineSpacingExtra="8sp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#99000000"
+                    android:textCursorDrawable="@drawable/edit_text_cursor_black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horseProfileImageView"
+                    tools:ignore="Autofill" />
+
+            <EditText
+                    android:id="@+id/horseShowNameEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/corner4_background_white"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/horse_show_name"
+                    android:inputType="textPersonName"
+                    android:lineSpacingExtra="8sp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#99000000"
+                    android:textCursorDrawable="@drawable/edit_text_cursor_black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@+id/horseBarnNameEditText"
+                    app:layout_constraintStart_toStartOf="@+id/horseBarnNameEditText"
+                    app:layout_constraintTop_toBottomOf="@+id/horseBarnNameEditText"
+                    tools:ignore="Autofill" />
+
+            <TextView
+                    android:id="@+id/horseGenderTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/corner4_background_white"
+                    android:drawableEnd="@drawable/ic_arrow_down_black_opacity"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:hint="@string/horse_gender"
+                    android:maxLines="1"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#99000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@+id/horseShowNameEditText"
+                    app:layout_constraintStart_toStartOf="@+id/horseShowNameEditText"
+                    app:layout_constraintTop_toBottomOf="@+id/horseShowNameEditText" />
+
+            <TextView
+                    android:id="@+id/horseBirthYearTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/corner4_background_white"
+                    android:drawableEnd="@drawable/ic_arrow_down_black_opacity"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:hint="@string/birth_year"
+                    android:maxLines="1"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#99000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@+id/horseGenderTextView"
+                    app:layout_constraintStart_toStartOf="@+id/horseGenderTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/horseGenderTextView" />
+
+            <EditText
+                    android:id="@+id/horseDescEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/corner4_background_white"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start"
+                    android:hint="@string/horse_profile_description"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="8sp"
+                    android:minHeight="80dp"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="16dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#99000000"
+                    android:textCursorDrawable="@drawable/edit_text_cursor_black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@+id/horseBirthYearTextView"
+                    app:layout_constraintStart_toStartOf="@+id/horseBirthYearTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/horseBirthYearTextView"
+                    tools:ignore="Autofill" />
+
+            <Button
+                    android:id="@+id/createButton"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/corner22_background_ec7185"
+                    android:fontFamily="sans-serif-medium"
+                    android:lineSpacingExtra="4sp"
+                    android:text="@string/create"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/horseDescEditText"
+                    app:layout_constraintStart_toStartOf="@+id/horseDescEditText"
+                    app:layout_constraintTop_toBottomOf="@+id/horseDescEditText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <View
+            android:id="@+id/shadowView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/toolbar_drop_shadow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

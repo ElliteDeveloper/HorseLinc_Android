@@ -1,0 +1,188 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/colorPrimaryDark"
+                                                   tools:context="com.horselinc.views.fragments.role.HLAddPaymentFragment"
+>
+
+    <Button
+            android:text="@string/done"
+            android:layout_width="80dp"
+            android:layout_height="40dp" android:id="@+id/doneButton"
+            android:background="@android:color/transparent"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:lineSpacingExtra="4sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp" android:layout_marginEnd="8dp"/>
+
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/doneButton">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="wrap_content"
+        >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="260dp"
+                    android:layout_height="150dp" android:id="@+id/cardLayout"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/corner15_border2_5dbdc2_background_5997b1"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp">
+
+                <View android:layout_width="44dp" android:layout_height="44dp"
+                      app:layout_constraintTop_toTopOf="parent"
+                      android:background="@drawable/corner8_background_5dbdc2"
+                      android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+                      android:layout_marginStart="16dp" android:id="@+id/markView"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:text="@string/bullet_symbols"
+                        android:id="@+id/firstNumberTextView"
+                        app:layout_constraintTop_toTopOf="@+id/secondNumberTextView"
+                        app:layout_constraintBottom_toBottomOf="@+id/secondNumberTextView"
+                        android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/secondNumberTextView"
+                        android:layout_marginStart="24dp" app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:text="@string/bullet_symbols"
+                        android:id="@+id/secondNumberTextView"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toStartOf="@+id/thirdNumberTextView"
+                        app:layout_constraintTop_toTopOf="@+id/thirdNumberTextView"
+                        app:layout_constraintBottom_toBottomOf="@+id/thirdNumberTextView"
+                        app:layout_constraintStart_toEndOf="@+id/firstNumberTextView"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:text="@string/bullet_symbols"
+                        android:id="@+id/thirdNumberTextView" android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toStartOf="@+id/lastNumberTextView"
+                        app:layout_constraintTop_toTopOf="@+id/lastNumberTextView"
+                        app:layout_constraintBottom_toBottomOf="@+id/lastNumberTextView"
+                        app:layout_constraintStart_toEndOf="@+id/secondNumberTextView"
+                        android:layout_marginStart="8dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="normal"
+                        android:textColor="@android:color/white"
+                        android:text="@string/bullet_symbols"
+                        android:id="@+id/lastNumberTextView" android:layout_marginBottom="24dp"
+                        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="24dp" app:layout_constraintStart_toEndOf="@+id/thirdNumberTextView"
+                        android:layout_marginStart="8dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.jude.easyrecyclerview.EasyRecyclerView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintTop_toBottomOf="@+id/cardLayout" android:id="@+id/paymentCardRecyclerView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+            </com.jude.easyrecyclerview.EasyRecyclerView>
+            <Button
+                    android:text="@string/add_new_card"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp" android:id="@+id/addCardButton"
+                    android:background="@android:color/transparent"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@android:color/white"
+                    android:lineSpacingExtra="4sp"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/paymentCardRecyclerView"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@android:color/white"
+                    android:text="@string/payment_approvals"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0" android:id="@+id/titleTextView"
+                    android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/addCardButton"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="@android:color/white"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/these_horse_managers_can_approve_payments"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.7"
+                    app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+                    app:layout_constraintStart_toStartOf="@+id/titleTextView"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+                    android:id="@+id/descTextView"/>
+            <com.jude.easyrecyclerview.EasyRecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/descTextView"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/approverRecyclerView"/>
+
+            <Button
+                    android:text="@string/add_payment_approver"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp" android:id="@+id/addApproverButton"
+                    android:background="@android:color/transparent"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@android:color/white"
+                    android:lineSpacingExtra="4sp"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/approverRecyclerView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="32dp"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

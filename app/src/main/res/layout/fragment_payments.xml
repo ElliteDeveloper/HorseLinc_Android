@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+            <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:lineSpacingExtra="8sp"
+                    android:text="@string/payments"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:id="@+id/exportImageView"
+                        android:layout_width="@dimen/size_icon_normal"
+                        android:layout_height="@dimen/size_icon_normal"
+                        android:layout_marginEnd="@dimen/size_4"
+                        android:padding="@dimen/size_8"
+                        app:srcCompat="@mipmap/ic_export_csv"
+                        android:contentDescription="@string/image_description">
+
+                </ImageView>
+
+                <ImageView
+                        android:id="@+id/moreImageView"
+                        android:layout_width="@dimen/size_icon_normal"
+                        android:layout_height="@dimen/size_icon_normal"
+                        android:layout_marginEnd="@dimen/size_8"
+                        android:padding="@dimen/size_8"
+                        app:srcCompat="@drawable/ic_more_vert"
+                        android:contentDescription="@string/image_description">
+
+                </ImageView>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:tabTextAppearance="@style/HLTabLayoutTextAppearance"
+            app:tabTextColor="#80FFFFFF"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabIndicatorHeight="@dimen/size_2"
+            app:tabIndicatorColor="@color/colorTeal">
+
+        <com.google.android.material.tabs.TabItem
+                android:id="@+id/draftsTabItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_provider_drafts" />
+
+        <com.google.android.material.tabs.TabItem
+                android:id="@+id/submittedTabItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_provider_submitted" />
+
+        <com.google.android.material.tabs.TabItem
+                android:id="@+id/paidTabItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_provider_paid" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>
